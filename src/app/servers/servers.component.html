@@ -15,6 +15,7 @@ class="form-control"
 <!-- <p>{{ serverName }}</p> -->
 <!-- <p [innerText]="allowNewServer"></p>
 <p>the above line returns the boolean status of the property allowNewServer</p> -->
-<p>{{ serverCreationStatus }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreated">Server name is {{ serverName }}</p>
 <app-server></app-server>
 <app-server></app-server>
